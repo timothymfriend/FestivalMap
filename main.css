@@ -1,0 +1,94 @@
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    height: 100%;
+    width: 100%;
+    }
+
+    body {
+        background-color: #fcf8f5;
+    }
+
+    #map {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        background-color: #fcf8f5;
+    }
+
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .roboto-condensed {
+       font-family: "Roboto Condensed", serif;
+       font-optical-sizing: auto;
+       font-weight: 3;
+       font-style: normal;
+   }
+
+    .info {
+        position: absolute;
+        padding: 6px 8px;
+        font: 20px/22px Bebas Neue, Bebas Neue, sans-serif;
+        background: white;
+        border: 1px solid rgba(240, 231, 221, 0.9);
+        background: rgba(240, 231, 221, 0.9);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        pointer-events: none; /* Allows mouse events to pass through */
+        z-index: 1000;
+        transition: transform 0.05s ease-in-out;
+        color: #66ad97;
+    }
+    .info h4 {
+        margin: 0 0 5px;
+        color: #59493b;
+    }
+
+    .legend {
+        position: absolute;
+        padding: 10px 8px;
+        font: 20px/22px Bebas Neue, Bebas Neue, sans-serif;
+        background: white;
+        background: rgba(240, 231, 221, 0.9);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        pointer-events: none; /* Allows mouse events to pass through */
+        z-index: 1000;
+        transition: transform 0.05s ease-in-out;
+        color: #66ad97;
+    }
+    .legend h4 {
+        font: 30px/22px Bebas Neue, Bebas Neue, bold, sans-serif;
+        padding: 6px 8px;
+        margin: 0 0 5px;
+        color: hsl(28, 20%, 29%);
+    }
+
+    .leaflet-popup-content-wrapper {
+        background-color: rgba(240, 231, 221, 0.9) !important; /* Force dark background */
+        color: #59493b !important; /* Force light text color */
+        font-family: Roboto Condensed, sans-serif !important;
+        font-size: 14px !important;
+        border-radius: 8px !important; /* Rounded corners */
+        box-shadow: 0 0 15px rgba(0,0,0,0.2) !important;
+        padding: 5px !important;
+    }
+
+    /* Style the popup pointer */
+    .leaflet-popup-tip {
+        background: rgba(240, 231, 221, 0.9) !important;
+    }
+
+    .info.legend img {
+        width: 30px;
+        height: 50px;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
